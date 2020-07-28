@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template: 20px 20px / 10px;
+    gap: 10px;
+}
+
+.uno{
+    background-color: lightgreen;
+}
+
+.dos{
+    background-color: lightgrey;
+}
+
+.tres{
+    background-color: lightsalmon;
+}
+
+.cuatro{
+    background-color: lightsteelblue;
+}
+
+.cinco{
+    background-color: lightskyblue;
+}
+
+.seis{
+    background-color: lightslategrey;
+}

@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.item{
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid black;
+}

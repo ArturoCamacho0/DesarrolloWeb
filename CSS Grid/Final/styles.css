@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    display: flex;
+    width: 100vw;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    box-shadow: 0px 1px 10px #ccc;
+    z-index: 3;
+}
+
+#header > h1{
+    color: white;
+    text-shadow: 0px 0px 3px red;
+    cursor: pointer;
+}
+
+#header > input{
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#perfil{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu > h2{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #333;
+}
+
+#section{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    height: 90vh;
+}
+
+.lateral{
+    background-color: #fd6162;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.items{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+.item{
+    cursor: pointer;
+    justify-content: center;
+}
+.cuatro{
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+#peliculas{
+    padding: 20px;
+}
+
+.peli{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info{
+    background-image: url(./mascotas.jpg);
+    height: 35vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.info > span{
+    background-color: #ff565d;
+    opacity: 0.8;
+    color: white;
+    padding: 5px;
+}
+
+.info span h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.info span p{
+    font-size: 0.8em;
+}

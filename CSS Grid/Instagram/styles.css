@@ -1,0 +1,33 @@
+body{
+    display: grid;
+    grid-template: repeat(3, 300px) / repeat(3, 300px);
+    justify-content: center;
+    gap: 15px;
+}
+
+.caja{
+    display: flex;
+    flex-flow: column;
+    background-color: lightskyblue;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja span{
+    display: none;
+}
+
+.caja:hover{
+    background-color: lightslategray;
+    color: lightslategray;
+    flex-flow: row;
+    justify-content: none;
+    align-items: none;
+}
+
+.caja:hover span{
+    display: flex;
+    color: white;
+    margin: 10px;
+}
