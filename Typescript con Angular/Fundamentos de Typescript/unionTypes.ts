@@ -21,6 +21,5 @@ interface Interface2{
 type interfaceMix = Interface1 | Interface2;
 
 const interfaceMix: interfaceMix = {
-    prop1: 2,
-    prop2: 3
+    prop1: 2
 }

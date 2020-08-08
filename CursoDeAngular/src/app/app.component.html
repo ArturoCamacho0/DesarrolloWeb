@@ -1,0 +1,48 @@
+<!-- INTERPOLACION
+La interpolación nos sirve para tener datos string que se puedan modificar durante
+le ejecución, esta propiedad solo debería ser utilizada para datos de tipo sring
+<h1>{{ title }}</h1>
+
+PROPERTY BINDING
+eL property Binding nos ayuda a tener datos dinámicos al igual que la interpolación
+solo que esta se puede alicar a otros tipos de datos de mejor forma
+<input [(ngModel)]="title"/> <--
+
+ngIf
+Esta propiedad nos sirve para aplicar condicionales en el HTML
+<div *ngIf="title == 'Arturo'">
+  Hola {{ title }}
+</div> -->
+
+<!-- <button (click)="addItem()">Añadir elemento</button>
+<ul>
+  <li *ngIf="array.length === 0">No hay items</li>
+  <li *ngFor="let item of array; index as i">{{ item }} {{ i }}</li>
+  <button (click)="deleteItem(i)">Delete</button>
+</ul> -->
+
+<!-- 
+  El ngFor nos sirve para recorrer elementos de un array o mostrar cierto número de veces un elemento
+  <div *ngFor="let product of products">
+  {{ product.id }}
+  {{ product.title }}
+  {{ product.price }}
+</div> -->
+
+<!-- Tambien se puede hacer uso del switch que nos facilita el uso de casos sobre el if -->
+<input [(ngModel)]="title"/> 
+
+<div [ngSwitch]="title">
+<p *ngSwitchCase="'Arturo'">
+  Caso 1
+</p>
+<p *ngSwitchCase="'Josef'">
+ Caso 2
+</p>
+<p *ngSwitchCase="'Arlet'">
+ Caso 3
+</p>
+<p *ngSwitchDefault>
+ No coincide
+</p>
+</div>
