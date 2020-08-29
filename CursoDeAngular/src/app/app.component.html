@@ -21,28 +21,34 @@ Esta propiedad nos sirve para aplicar condicionales en el HTML
   <button (click)="deleteItem(i)">Delete</button>
 </ul> -->
 
-<!-- 
+<!--
   El ngFor nos sirve para recorrer elementos de un array o mostrar cierto número de veces un elemento
   <div *ngFor="let product of products">
-  {{ product.id }}
-  {{ product.title }}
-  {{ product.price }}
+  <app-product [product] = ''></app-product>
 </div> -->
 
 <!-- Tambien se puede hacer uso del switch que nos facilita el uso de casos sobre el if -->
-<input [(ngModel)]="title"/> 
+<!-- <input [(ngModel)]="title"/>
 
 <div [ngSwitch]="title">
 <p *ngSwitchCase="'Arturo'">
   Caso 1
 </p>
 <p *ngSwitchCase="'Josef'">
- Caso 2
+  Caso 2
 </p>
 <p *ngSwitchCase="'Arlet'">
- Caso 3
+  Caso 3
 </p>
 <p *ngSwitchDefault>
- No coincide
+  No coincide
 </p>
+</div> -->
+
+<input [(ngModel)]= 'power'/>{{ power | exponential }}
+
+<div class="product-grid">
+  <app-product
+  *ngFor="let product of products" (proudctClicked) = "clickItem($event)"
+  [product] = 'product'></app-product>
 </div>
